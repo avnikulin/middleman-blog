@@ -1,0 +1,35 @@
+			</div>
+			<div class="uk-width-medium-1-4">
+				
+		    <aside>
+					<div class="uk-panel uk-panel-box">
+		      <h3 class="uk-panel-title">Recent Articles</h3>
+		      <ol>
+		        <% blog.articles[0...10].each do |article| %>
+		          <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
+		        <% end %>
+		      </ol>
+				</div>
+<br />
+				<div class="uk-panel uk-panel-box">
+		      <h3 class="uk-panel-title">Tags</h3>
+		      <ol>
+		        <% blog.tags.each do |tag, articles| %>
+		          <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
+		        <% end %>
+		      </ol>
+				</div>
+<br />
+				<div class="uk-panel uk-panel-box">
+		      <h3 class="uk-panel-title">Archive</h3>
+		      <ol>
+		        <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+		          <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
+		        <% end %>
+		      </ol>
+				</div>
+		    </aside>
+				
+			</div>
+		</div>
+	</div>

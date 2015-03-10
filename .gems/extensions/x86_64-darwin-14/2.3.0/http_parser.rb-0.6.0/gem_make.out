@@ -1,0 +1,12 @@
+/Users/alex/.rvm/rubies/ruby-head/bin/ruby -r ./siteconf20150308-43153-zgmae5.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20150308-43153-u5wb9a

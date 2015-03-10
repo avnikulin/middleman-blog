@@ -1,0 +1,7 @@
+<% wrap_layout :layout do %>
+				<article class="uk-article">
+        <h1 class="uk-article-title"><%= current_article.title %></h1>
+				<p class="uk-article-meta">Written by Alexander Nikulin on <%= current_article.date.strftime('%b %d %Y') %></p>
+        <%= yield %>
+			  </article>
+<% end %>
