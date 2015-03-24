@@ -1,7 +1,37 @@
 <% wrap_layout :layout do %>
-				<article class="uk-article">
-        <h1 class="uk-article-title"><%= current_article.title %></h1>
-				<p class="uk-article-meta">Written by Alexander Nikulin on <%= current_article.date.strftime('%b %d %Y') %></p>
+																					
+
+			<div class="post">
+	<h1 class="postTitle"><%= current_article.title %></h1>
+	<p class="meta">Written by Alexander Nikulin on <%= current_article.date.strftime('%B %e, %Y') %>
+
         <%= yield %>
-			  </article>
+				
+				<div id="disqus_thread"></div>
+				<script type="text/javascript">
+				    /* * * CONFIGURATION VARIABLES * * */
+				    var disqus_shortname = 'anikulin';
+    
+				    /* * * DON'T EDIT BELOW THIS LINE * * */
+				    (function() {
+				        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				    })();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+				
+				<!-- POST NAVIGATION -->
+					<div class="postNav clearfix">
+						<% prev_article = current_article.previous_article %>
+						<% if prev_article %>
+						<%= link_to "<span>&laquo; #{prev_article.title}</span>", prev_article, class: 'prev' %>
+						<% end %>
+						<% next_article = current_article.next_article %>
+						<% if next_article %>
+						<%= link_to "<span>#{next_article.title} &raquo;</span>", next_article, class: 'next' %>
+						<% end %>
+					</div>
+				</div>
+			
 <% end %>

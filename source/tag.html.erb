@@ -1,8 +1,10 @@
 ---
 pageable: true
 per_page: 12
+title: Category
 ---
-<h1>Articles tagged '<%= tagname %>'</h1>
+<div class="post">
+<h1 class="postTitle"><%= tagname.capitalize %></h1>
 
 <% if paginate && num_pages > 1 %>
   <p>Page <%= page_number %> of <%= num_pages %></p>

@@ -1,0 +1,23 @@
+---
+title: Contact
+subtitle: Contact
+layout: layout
+---
+<div id="contact">
+	<h1 class="pageTitle"><%= current_page.data.subtitle %></h1>
+
+		<div class="contactContent">
+		    <p class="intro">This is the contact page for Ploenny. This is the best way to contact Biebie, Booboo's wifey :)</p>
+				<p>Don't hesitate to ask a question. Just type inside the form and hit send! Cutiepieploen will try to get to your message as soon as possible.</p>
+		</div>
+<form action="https://getsimpleform.com/messages?form_api_token=66ec4bc429e186ac8fe5ced9f1d35bf4" method="post">
+<input type='hidden' name='redirect_to' value='http://localhost:9999/thankyou' />
+<label for="name">Name</label>    
+    <input type="text" id="name" name="name" class="full-width" required><br>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" class="full-width" required><br>
+    <label for="message">Message</label>
+    <textarea name="message" id="message" cols="30" rows="10" class="full-width" required></textarea><br>
+    <input type="submit" value="Send" class="button">
+	</form>
+</div>
