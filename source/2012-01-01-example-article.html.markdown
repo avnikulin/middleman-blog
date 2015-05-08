@@ -4,8 +4,6 @@ date: 2012-01-01
 tags: example
 ---
 
-This is an example article. You probably want to delete it and write your own articles!
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a elit id nibh eleifend ullamcorper at ac ex. Nunc faucibus ut lectus sit amet mollis. Fusce mollis bibendum maximus. Duis ut lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices enim nisi, vitae scelerisque magna facilisis ut. In at risus vel turpis posuere egestas nec quis lectus. Curabitur eget dignissim quam, sit amet dignissim magna.
 
 Nullam eu metus elementum, molestie dolor a, aliquam orci. Pellentesque ut venenatis massa. Donec a suscipit dui, non lobortis nisl. Suspendisse tincidunt massa vitae laoreet elementum. Nunc consectetur nunc et dolor molestie porta. Duis eu dignissim quam. Etiam gravida tortor purus, at tincidunt eros pharetra sit amet. Nam et finibus diam. Suspendisse potenti. Duis a neque sit amet elit mollis cursus eget non lacus. Nam vulputate dolor non lectus consectetur porta. Duis id facilisis dui, at pharetra leo. Morbi molestie odio vel dui tincidunt, a vulputate mi vestibulum. Morbi rutrum vulputate massa at maximus. Vestibulum ac neque quam. Integer eget dignissim tortor.

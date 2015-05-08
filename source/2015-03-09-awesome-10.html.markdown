@@ -1,5 +1,5 @@
 ---
-title: Awesome 10
+title: Example Article 2
 date: 2015-03-09 06:39
 tags:
 ---

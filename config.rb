@@ -79,6 +79,9 @@ page "/feed.xml", layout: false
 #   end
 # end
 
+activate :syntax
+set :markdown_engine, :kramdown
+
 set :css_dir, 'stylesheets'
 set :sass_dir, 'stylesheets'
 set :js_dir, 'javascripts'

@@ -38,7 +38,7 @@ HOMEPAGE STYLING
 
 #home {
 	.posts, .pageTitle, .pagination {
-		@include span(9 of 12);
+		@include span(12 of 12);
 		float: none;
 		margin: 0 auto 1.5em;
 	}
@@ -139,7 +139,7 @@ POST STYLING
 
 .post {
 	h1, h2, h3, h4, h5, h6, p, ul, ol, dl, .pageTitle {
-		@include span(9 of 12); 
+		@include span(12 of 12); 
 		float: none;
 		margin: 0 auto 2rem; 
 	}
@@ -231,3 +231,20 @@ CONTACT PAGE STYLING
 		@include span(6 of 12 last);
 	}
 }
+
+/***************
+ABOUT PAGE STYLING
+***************/
+
+.aboutLeftcontent {
+	@include span(6 of 12);
+}
+
+.aboutContent {
+	@include span(12 of 12);
+}
+
+.aboutRightcontent {
+	@include span(6 of 12 last);
+}
+
